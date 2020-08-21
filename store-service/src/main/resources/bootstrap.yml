@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8167
+  application:
+    name: store-service
+server:
+  port: 8100

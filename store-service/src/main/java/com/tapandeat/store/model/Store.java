@@ -1,0 +1,136 @@
+package com.tapandeat.store.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@Entity
+@Table(name = "store")
+public class Store {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	@JsonProperty("storeName")
+	private String storeName;
+	@JsonProperty("branchName")
+	private String branchName;
+	@JsonProperty("Location")
+	private String location;
+	@JsonProperty("address")
+	private String address;
+	@JsonProperty("postalCode")
+	private String postalCode;
+	@JsonProperty("phone")
+	private String phone;
+	@JsonProperty("email")
+	private String email;
+	
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+	/**
+	 * @return the storeName
+	 */
+	public String getStoreName() {
+		return storeName;
+	}
+	/**
+	 * @param storeName the storeName to set
+	 */
+	public void setStoreName(String storeName) {
+		this.storeName = storeName;
+	}
+	/**
+	 * @return the branchName
+	 */
+	public String getBranchName() {
+		return branchName;
+	}
+	/**
+	 * @param branchName the branchName to set
+	 */
+	public void setBranchName(String branchName) {
+		this.branchName = branchName;
+	}
+	/**
+	 * @return the location
+	 */
+	public String getLocation() {
+		return location;
+	}
+	/**
+	 * @param location the location to set
+	 */
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	/**
+	 * @return the address
+	 */
+	public String getAddress() {
+		return address;
+	}
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	/**
+	 * @return the phone
+	 */
+	public String getPhone() {
+		return phone;
+	}
+	/**
+	 * @param phone the phone to set
+	 */
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	/**
+	 * @return the postalCode
+	 */
+	public String getPostalCode() {
+		return postalCode;
+	}
+	/**
+	 * @param postalCode the postalCode to set
+	 */
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+	@Override
+	public String toString() {
+		return "Store [id=" + id + ", storeName=" + storeName + ", branchName=" + branchName + ", location=" + location
+				+ ", address=" + address + ", phone=" + phone + ", email=" + email + "]";
+	}
+
+}
