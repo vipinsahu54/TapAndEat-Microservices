@@ -2,504 +2,288 @@
 <html xmlns:th="http://www.thymeleaf.org" class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Burger</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Tap & Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+<!-- <link rel="manifest" href="site.webmanifest"> -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
+<!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+<!-- CSS here -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/themify-icons.css">
+<link rel="stylesheet" href="css/nice-select.css">
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/slicknav.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
+	<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col-xl-5 col-lg-5">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a  href="index">home</a></li>
-                                        <li><a class="active" href="menu">Menu</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index">
-                                	<div class="section_title text-center mb-85">
-				                        <span>Tap & Eat</span>
-				                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-5 d-none d-lg-block">
-                            <div class="book_room">
-                                <div class="socail_links">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="book_btn d-none d-xl-block">
-                                    <a class="#" href="#">+10 367 453 7382</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
+	<!-- header-start -->
+	<header>
+		<div class="header-area ">
+			<div id="sticky-header" class="main-header-area">
+				<div class="container-fluid p-0">
+					<div class="row align-items-center no-gutters">
+						<div class="col-xl-5 col-lg-5">
+							<div class="main-menu  d-none d-lg-block">
+								<nav>
+									<ul id="navigation">
+										<li><a href="index">home</a></li>
+										<li><a class="active" href="menu">Menu</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2">
+							<div class="logo-img">
+								<a href="index">
+									<div class="section_title text-center mb-85">
+										<span>Tap & Eat</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 d-none d-lg-block">
+							<div class="book_room">
+								<div class="socail_links">
+									<ul>
+										<li><a href="#"> <i class="fa fa-instagram"></i>
+										</a></li>
+										<li><a href="#"> <i class="fa fa-twitter"></i>
+										</a></li>
+										<li><a href="#"> <i class="fa fa-facebook"></i>
+										</a></li>
+										<li><a href="#"> <i class="fa fa-google-plus"></i>
+										</a></li>
+									</ul>
+								</div>
+								<div class="book_btn d-none d-xl-block">
+									<a class="#" href="#">+10 367 453 7382</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="mobile_menu d-block d-lg-none"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header-end -->
 
-    <!-- bradcam_area_start -->
-    <div class="bradcam_area breadcam_bg overlay">
-        <h3>Menu</h3>
-    </div>
-    <!-- bradcam_area_end -->
+	<!-- bradcam_area_start -->
+	<div class="bradcam_area breadcam_bg overlay">
+		<h3>Menu</h3>
+	</div>
+	<!-- bradcam_area_end -->
 
-    <!-- best_burgers_area_start  -->
-    <div class="best_burgers_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80">
-                        <h3>Best Cuisine</h3>
-                        <span>Burger Menu</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row" >
-                <div class="col-xl-6 col-md-6 col-lg-6" th:each="item: ${items}">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img th:src="${item.image}" alt="">
-                        </div>
-                        <div class="info">
-                            <h3 th:text="${item.name}">Beefy Burgers</h3>
-                            <p th:text="${item.description}">Great way to make your business appear trust and relevant.</p>
-                            <span th:text="${'Rs. '+item.price}">$5</span>
-                            <p th:text="${item.offers.discount+'% OFF'}">$5</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/2.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Boys</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
+	<!-- best_burgers_area_start  -->
+	<div class="best_burgers_area">
+		<div class="container" th:each="cuisine: ${cuisines}">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section_title text-center mb-80">
+						<span th:text="${cuisine.name}">Burger Menu</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-md-6 col-lg-6" th:each="item: ${items}"
+					th:if="${cuisine.name} == ${item.cuisine.name}">
+					<div class="single_delicious d-flex align-items-center">
+						<div class="thumb">
+							<img th:src="${item.image}" width="150" height="150" alt="">
+						</div>
+						<div class="info">
+							<h3 th:text="${item.name}">Beefy Burgers</h3>
+							<p th:text="${item.description}">Great way to make your
+								business appear trust and relevant.</p>
+							<span th:text="${'Rs. '+item.price}">$5</span>
+							<p th:text="${item.offers.discount+'% OFF'}">$5</p>
+						</div>
+					</div>
+				</div>
 
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/3.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Burger Bizz</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/4.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Crackles Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/5.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Bull Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
+			</div>
+		</div>
+	</div>
+	<!-- best_burgers_area_end  -->
 
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/6.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Rocket Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/7.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Smokin Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/8.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Delish Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 col-lg-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/4.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Crackles Burger</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_delicious d-flex align-items-center">
-                        <div class="thumb">
-                            <img src="img/burger/5.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Bull Burgers</h3>
-                            <p>Great way to make your business appear trust and relevant.</p>
-                            <span>$5</span>
-                        </div>
-                    </div>
+	<!-- testimonial_area_start  -->
+	<div class="testimonial_area ">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="section_title mb-60 text-center">
+						<span>Testimonials</span>
+						<h3>Happy Customers</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="testmonial_active owl-carousel">
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- best_burgers_area_end  -->
+						<div class="single_carousel" th:each="customer: ${customers}">
+							<div class="row justify-content-center">
+								<div class="col-lg-8">
+									<div class="single_testmonial text-center">
+										<p th:text="${customer.comment}">“Donec imperdiet congue
+											orci consequat mattis. Donec rutrum porttitor sollicitudin.
+											Pellentesque id dolor tempor sapien feugiat ultrices nec sed
+											neque.</p>
+										<div class="testmonial_author">
+											<div class="thumb">
+												<img th:src="${customer.image}" alt="">
+											</div>
+											<h4 th:text="${customer.firstName+' '+customer.lastName}">Kristiana
+												Chouhan</h4>
+											<div class="stars">
+												<i class="fa fa-star" th:if="${(customer.rating-1)>=0}"></i>  
+												<i class="fa fa-star" th:if="${(customer.rating-2)>=0}"></i>  
+												<i class="fa fa-star" th:if="${(customer.rating-3)>=0}"></i>  
+												<i class="fa fa-star" th:if="${(customer.rating-4)>=0}"></i>  
+												<i class="fa fa-star" th:if="${(customer.rating-5)>=0}"></i>  
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- testimonial_area_ned  -->
 
-    <!-- testimonial_area_start  -->
-    <div class="testimonial_area ">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-60 text-center">
-                        <span>Testimonials</span>
-                        <h3>Happy Customers</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testmonial_active owl-carousel">
-                    
-                    
-                        <div class="single_carousel">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="single_testmonial text-center">
-                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                            sed
-                                            neque.</p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                <img src="img/testmonial/1.png" alt="">
-                                            </div>
-                                            <h4>Kristiana Chouhan</h4>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="single_testmonial text-center">
-                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                            sed
-                                            neque.</p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                <img src="img/testmonial/2.png" alt="">
-                                            </div>
-                                            <h4>Arafath Hossain</h4>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="single_testmonial text-center">
-                                        <p>“Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor
-                                            sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec
-                                            sed
-                                            neque.</p>
-                                        <div class="testmonial_author">
-                                            <div class="thumb">
-                                                <img src="img/testmonial/3.png" alt="">
-                                            </div>
-                                            <h4>A.H Shemanto</h4>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-half"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-<!-- testimonial_area_ned  -->
+	<!-- instragram_area_start -->
+	<div class="instragram_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="single_instagram">
+						<img src="img/instragram/1.png" alt="">
+						<div class="ovrelay">
+							<a href="#"> <i class="fa fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_instagram">
+						<img src="img/instragram/2.png" alt="">
+						<div class="ovrelay">
+							<a href="#"> <i class="fa fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_instagram">
+						<img src="img/instragram/3.png" alt="">
+						<div class="ovrelay">
+							<a href="#"> <i class="fa fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="single_instagram">
+						<img src="img/instragram/4.png" alt="">
+						<div class="ovrelay">
+							<a href="#"> <i class="fa fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- instragram_area_end -->
 
-    <!-- instragram_area_start -->
-    <div class="instragram_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="single_instagram">
-                    <img src="img/instragram/1.png" alt="">
-                    <div class="ovrelay">
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single_instagram">
-                    <img src="img/instragram/2.png" alt="">
-                    <div class="ovrelay">
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single_instagram">
-                    <img src="img/instragram/3.png" alt="">
-                    <div class="ovrelay">
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="single_instagram">
-                    <img src="img/instragram/4.png" alt="">
-                    <div class="ovrelay">
-                        <a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- instragram_area_end -->
+	<!-- footer_start  -->
+	<footer class="footer">
+		<div class="footer_top">
+			<div class="container">
+				<div class="row">
 
-    <!-- footer_start  -->
-    <footer class="footer">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                    
-                    
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget text-center ">
-                                <h3 class="footer_title pos_margin">
-                                        New York
-                                </h3>
-                                <p>5th flora, 700/D kings road, <br> 
-                                        green lane New York-1782 <br>
-                                        <a href="#">info@burger.com</a></p>
-                                <a class="number" href="#">+10 378 483 6782</a>
+					<div class="col-xl-4 col-md-6 col-lg-4" th:each="store: ${stores}">
+						<div class="footer_widget text-center ">
+							<h3 class="footer_title pos_margin" th:text="${store.location}">
+								New York</h3>
+							<p th:text="${store.address}">
+								5th flora, 700/D kings road, <br> green lane New York-1782
+								<br> <a href="#" th:text="${store.email}">info@burger.com</a>
+							</p>
+							<a class="number" href="#" th:text="${store.phone}">+10 378
+								483 6782</a>
 
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget text-center ">
-                                <h3 class="footer_title pos_margin">
-                                    California
-                                </h3>
-                                <p>5th flora, 700/D kings road, <br> 
-                                        green lane New York-1782 <br>
-                                        <a href="#">info@burger.com</a></p>
-                                <a class="number" href="#">+10 378 483 6782</a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-12 col-lg-4">
+						<div class="footer_widget">
+							<h3 class="footer_title">Stay Connected</h3>
+							<form action="#" class="newsletter_form">
+								<input type="text" placeholder="Enter your mail">
+								<button type="submit">Sign Up</button>
+							</form>
+							<p class="newsletter_text">Stay connect with us to get
+								exclusive offer!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="col-xl-4 col-md-12 col-lg-4">
-                                <div class="footer_widget">
-                                        <h3 class="footer_title">
-                                                Stay Connected
-                                        </h3>
-                                        <form action="#" class="newsletter_form">
-                                            <input type="text" placeholder="Enter your mail">
-                                            <button type="submit">Sign Up</button>
-                                        </form>
-                                        <p class="newsletter_text">Stay connect with us to get exclusive offer!</p>
-                                    </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4">
-                            <div class="socail_links text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-twitter-alt"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="ti-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-    </footer>
-    <!-- footer_end  -->
+	</footer>
+	<!-- footer_end  -->
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+	<!-- JS here -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/ajax-form.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/scrollIt.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/nice-select.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/plugins.js"></script>
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+	<!--contact js-->
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mail-script.js"></script>
 
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 

@@ -1,0 +1,2 @@
+insert into store values(1000,'5th flora, 700/D kings road, green lane, New York','Tap And Eat NYC','info@tapAndEat.com','New York','+10 378 483 6782','1782','Tap And Eat');
+insert into store values(1001,'A16 sector 60, Noida, UP','Tap And Eat UP','info@tapAndEat.com','Noida','+91 953 638 3892','201301','Tap And Eat');

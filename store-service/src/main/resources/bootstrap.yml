@@ -4,5 +4,7 @@ spring:
       uri: http://localhost:8167
   application:
     name: store-service
+  datasource:
+    url: jdbc:h2:file:~/data/store
 server:
   port: 8100

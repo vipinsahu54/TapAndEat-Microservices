@@ -4,5 +4,7 @@ spring:
       uri: http://localhost:8167
   application:
     name: customer-service
+  datasource:
+    url: jdbc:h2:file:~/data/customer
 server:
   port: 8200
