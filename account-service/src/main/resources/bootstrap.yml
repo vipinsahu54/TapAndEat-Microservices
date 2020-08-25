@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8167
+  application:
+    name: account-service
+  datasource:
+    url: jdbc:h2:file:~/data/account
+server:
+  port: 8101
