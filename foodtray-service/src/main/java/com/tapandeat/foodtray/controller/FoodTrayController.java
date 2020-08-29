@@ -43,8 +43,8 @@ public class FoodTrayController {
 	private AccountService accountService;
 	
 	@GetMapping(value = "/account")
-	public Account getStoreById() {
-		return accountService.getAccountById(Long.valueOf(1000));		
+	public Items getStoreById() {
+		return restaurantService.findItemById(Long.valueOf(1000));
 	}
 	
 	@GetMapping(value="/signin")
@@ -72,6 +72,13 @@ public class FoodTrayController {
 			return model;
 		}
 		model.setViewName("index");
+		List<Items> itemsRepo=restaurantService.findAllItems();
+		List<Items> items=new ArrayList<Items>();
+		int lastIndex=itemsRepo.size() < 6?itemsRepo.size():6;
+		items.addAll(itemsRepo.subList(0, lastIndex));
+		model.addObject("stores",storeService.findAll());
+		model.addObject("customers", customerService.findAll());
+		model.addObject("items", items);
 		return model;
 	}
 	
@@ -79,6 +86,13 @@ public class FoodTrayController {
 	public ModelAndView signOut(HttpServletRequest request) {
 		request.getSession().setAttribute("username", "");
 		ModelAndView model=new ModelAndView("index");
+		List<Items> itemsRepo=restaurantService.findAllItems();
+		List<Items> items=new ArrayList<Items>();
+		int lastIndex=itemsRepo.size() < 6?itemsRepo.size():6;
+		items.addAll(itemsRepo.subList(0, lastIndex));
+		model.addObject("stores",storeService.findAll());
+		model.addObject("customers", customerService.findAll());
+		model.addObject("items", items);
 		return model;
 	}
 	
@@ -86,7 +100,7 @@ public class FoodTrayController {
 	public ModelAndView index(HttpServletRequest request) {
 		ModelAndView model= new ModelAndView();
 		HttpSession session = request.getSession();
-		if(session.getAttribute("username").toString().length()<=0)
+		if(session.getAttribute("username")!= null && session.getAttribute("username").toString().length()<=0)
 			session.setAttribute("username", "");
 		List<Items> itemsRepo=restaurantService.findAllItems();
 		List<Items> items=new ArrayList<Items>();
